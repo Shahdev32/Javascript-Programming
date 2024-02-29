@@ -49,3 +49,34 @@ Math.LN2      // returns the natural logarithm of 2
 Math.LN10     // returns the natural logarithm of 10
 Math.LOG2E    // returns base 2 logarithm of E
 Math.LOG10E
+
+
+//
+
+function hello()
+{
+    console.log("Hello")
+
+}
+
+
+hello()
+
+// function with arguments 
+function info(name,age){
+    console.log( `the ${name}'s age is ${age}`)
+
+}
+
+info();
+
+
+///
+function sum(a,b){
+    return a+b;
+}
+
+console.log(sum(3,4));
+
+
+
