@@ -15,7 +15,7 @@
 
 
 //operators
-let a=5;
+/*let a=5;
 let b=2;
 console.log(a+b);
 console.log(a-b);
@@ -73,10 +73,47 @@ info();
 
 ///
 function sum(a,b){
-    return a+b;
+    return a+b;/
 }
 
 console.log(sum(3,4));
 
 
 
+
+// arrow function 
+
+const sum  = (a,b) => {
+    console.log(a+b)
+}
+
+// calling
+sum(3,4);
+
+const cube = (n) => {
+    return n*n*n;
+
+}
+
+
+cube(2);
+
+
+// implict arrow function
+const mul = (a,b)  => {
+    a*b;
+
+
+}
+
+
+
+//DOM
+//doucment oject model
+
+  */
+ 
+
+<button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
+<button onclick="this.innerHTML = Date()">The time is?</button>
+<button onclick="displayDate()">The time is?</button>
