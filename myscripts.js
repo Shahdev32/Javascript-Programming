@@ -123,5 +123,38 @@ const mul = (a,b)  => {
 
 */
 
+// Add event listener to the button
+let btn = document.querySelector("button");
+btn.addEventListener("click", function () {
+    // Get reference to the h3 element
+    let h3 = document.querySelector("h3");
+    
+    // Generate a random color
+    let randomColor = getRandomColor();
+    
+    // Update the text content of the h3 element with the generated color
+    h3.innerText = randomColor;
 
+    // Get reference to the div element
+    let div = document.querySelector("div");
+    
+    // Change the background color of the div element to the generated color
+    div.style.backgroundColor = randomColor;
+    
+    // Log a message to indicate that the color has been updated
+    console.log("Color updated");
+});
 
+// Function to generate a random color
+function getRandomColor() {
+    // Generate random values for red, green, and blue components
+    let red = Math.floor(Math.random() * 256); // Use Math.random() * 256 to include 255
+    let green = Math.floor(Math.random() * 256);
+    let blue = Math.floor(Math.random() * 256);
+    
+    // Construct the RGBA color string
+    let color = `rgba(${red},${green},${blue},1)`; // Set alpha to 1 for fully opaque color
+    
+    // Return the generated color
+    return color;
+}
